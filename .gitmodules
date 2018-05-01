@@ -1,0 +1,3 @@
+[submodule "apache/src"]
+	path = apache/src
+	url = http://ips-labs.unil.ch:1337/PiAnoS/src.git
