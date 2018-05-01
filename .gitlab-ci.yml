@@ -1,0 +1,14 @@
+variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+    - build
+
+before_script:
+    - docker --version
+    - docker-compose --version
+
+build:
+    stage: build
+    script:
+        - docker-compose build
