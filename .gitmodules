@@ -1,3 +1,6 @@
 [submodule "apache/src"]
 	path = apache/src
 	url = http://ips-labs.unil.ch:1337/PiAnoS/src.git
+[submodule "apache/cdn"]
+	path = apache/cdn
+	url = http://ips-labs.unil.ch:1337/PiAnoS/cdn.git
