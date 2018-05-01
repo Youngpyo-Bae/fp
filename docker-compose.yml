@@ -1,0 +1,14 @@
+version: '3'
+services:
+    web:
+        build: apache
+        
+        volumes:
+            - ./apache/libs:/usr/share/php
+            - ./apache/src:/var/www/html
+            - ./apache/cdn:/var/www/html/cdn
+        
+        restart: always
+        
+        ports:
+            - 80:80
