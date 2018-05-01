@@ -12,3 +12,14 @@ services:
         
         ports:
             - 80:80
+    
+    db:
+        build: postgres
+        
+        env_file:
+            - .env
+        
+        volumes:
+            - ./postgres/pgdata:/var/lib/postgresql/data/pgdata
+        
+        restart: always
