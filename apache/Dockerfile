@@ -7,7 +7,13 @@ RUN apt update && \
 RUN apt install -y apache2 libapache2-mod-php php php-mbstring php-pgsql php-gd php-imagick
 
 RUN apt install -y locales
+
+RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment && \
+	echo "en_US.UTF-8 UTF-8"  >> /etc/locale.gen  && \
+	echo "LANG=en_US.UTF-8"   >  /etc/locale.conf
+
 RUN locale-gen en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 
