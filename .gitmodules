@@ -4,3 +4,6 @@
 [submodule "apache/cdn"]
 	path = apache/cdn
 	url = http://ips-labs.unil.ch:1337/PiAnoS/cdn.git
+[submodule "apache/libs"]
+	path = apache/libs
+	url = http://ips-labs.unil.ch:1337/PiAnoS/php_classes.git
