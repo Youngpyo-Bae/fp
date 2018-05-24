@@ -1,5 +1,5 @@
 FROM postgres:10
-MAINTAINER Marco De Donno <Marco.DeDonno@unil.ch>
+LABEL maintainer "Marco De Donno <Marco.DeDonno@unil.ch>"
 
 ################################################################################
 ###	System update
