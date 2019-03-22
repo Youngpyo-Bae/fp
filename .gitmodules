@@ -1,9 +1,9 @@
 [submodule "apache/src"]
 	path = apache/src
-url=https://ips-labs-backend.unil.ch/PiAnoS/src.git
+url=https://esc-md-git.unil.ch/PiAnoS/src.git
 [submodule "apache/cdn"]
 	path = apache/cdn
-url=https://ips-labs-backend.unil.ch/PiAnoS/cdn.git
+url=https://esc-md-git.unil.ch/PiAnoS/cdn.git
 [submodule "apache/libs"]
 	path = apache/libs
-url=https://ips-labs-backend.unil.ch/PiAnoS/php_classes.git
+url=https://esc-md-git.unil.ch/PiAnoS/php_classes.git
