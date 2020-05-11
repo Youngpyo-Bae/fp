@@ -2,6 +2,7 @@ version: '3'
 services:
     web:
         build: apache
+        image: pianos_web
         
         volumes:
             - ./apache/libs:/usr/share/php
@@ -15,6 +16,7 @@ services:
     
     db:
         build: postgres
+        image: pianos_db
         
         env_file:
             - .env
