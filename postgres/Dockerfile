@@ -1,4 +1,4 @@
-FROM postgres:10
+FROM postgres:11
 LABEL maintainer "Marco De Donno <Marco.DeDonno@unil.ch>"
 
 ################################################################################
