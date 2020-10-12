@@ -3,7 +3,7 @@ all: build up
 build:
 	docker-compose build
 
-up:
+up: build
 	docker-compose up
 
 down:
