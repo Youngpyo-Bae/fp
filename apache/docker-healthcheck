@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eo pipefail
+
+curl -k --fail http://localhost/?action=ping
+

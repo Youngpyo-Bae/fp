@@ -9,7 +9,7 @@ RUN apt-get update
 ################################################################################
 ###    Installation of Apache and PHP
 
-RUN apt-get install -y apache2 libapache2-mod-php php php-mbstring php-pgsql php-gd php-imagick
+RUN apt-get install -y apache2 libapache2-mod-php php php-mbstring php-pgsql php-gd php-imagick curl
 
 ################################################################################
 ###    Configure the locales
@@ -42,6 +42,16 @@ RUN chmod 755 /var/www/run_apache.sh
 EXPOSE 80
 
 WORKDIR /var/www/html
+
+################################################################################
+###	Healthcheck
+
+COPY ./docker-healthcheck /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-healthcheck
+HEALTHCHECK CMD [ "docker-healthcheck" ]
+
+################################################################################
+###	Run script
 
 CMD [ "/var/www/run_apache.sh" ]
 ENTRYPOINT [ "/var/www/run_apache.sh" ]
