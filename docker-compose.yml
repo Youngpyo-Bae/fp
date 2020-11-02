@@ -9,8 +9,6 @@ services:
             - ./apache/src:/var/www/html
             - ./apache/cdn:/var/www/html/cdn
         
-        restart: on-failure
-        
         ports:
             - 127.0.0.1:80:80
     
@@ -24,8 +22,6 @@ services:
         volumes:
             - ./postgres/pgdata:/var/lib/postgresql/data/pgdata
         
-        restart: on-failure
-
         ports:
             - 127.0.0.1:5432:5432
 
